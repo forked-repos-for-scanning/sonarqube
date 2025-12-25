@@ -20,6 +20,7 @@ concurrency:
 
 jobs:
   build:
+    if: ${{ github.repository_owner == 'SonarSource' }}
     runs-on: sonar-s-public
     name: Build, JUnit and SonarQube
     permissions:
